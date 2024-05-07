@@ -1,3 +1,7 @@
+Dataset: Retrieved from kaggle: https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset?select=Fake.csv
+
+
+
 Preprocessing Pipeline:
 * Data Wrangling: Utilizing AWS Canvas Data Wrangler, we efficiently handle simple transformations such as labeling, concatenating, managing missing values, and removing duplicates. This forms the initial stage of preparing our dataset for more complex operations.
 * Advanced Cleaning and Tokenization: A dedicated notebook is used for deeper data cleaning, which involves removing special characters, URLs, and other non-essential elements. The text is then tokenized. Given the token limit of 4096 for the Longformer model, a decision was made to use truncation over a sliding window approach. This decision is justified as the model's inherent sliding window capability ensures that 4096 tokens typically capture sufficient context for accurate classification.
